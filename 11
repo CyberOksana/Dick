@@ -1,0 +1,16 @@
+secret = ["Какой код вы хотите узнать: ", 2,5,8]
+password = 123321
+pas_secret = 12
+question1 = ["Какой код вы хотите узнать: ", 1,2,3,"]
+while True
+    password = input("Введите пароль: ")
+     if == parol:
+        if k == 3:
+            break
+        else:
+            password = input("Введите пароль: ")
+            k += 1
+        if password == parol:
+
+
+
