@@ -1,0 +1,17 @@
+import cv2
+img = cv2.imread('image/Птичка.jpg')
+u = input()
+if u == '1':
+    
+    cv2.imshow('fd', img)
+    img = cv2.rezize(img, (300, 500))
+    cv2.waitKey(0)
+#if str(Птичка.jpg)
+#if cv2.inshow('Птичка.jpg', img)
+
+
+
+#a = {"t49":}
+
+
+#"Ис-7":2, "Тойота супра":3,"Птичка":4,"Скайлайн",5, "Кранвагн":6,"Мс-1",7
