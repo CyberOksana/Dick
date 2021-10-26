@@ -1,0 +1,31 @@
+import time
+i=0
+while True:
+    my_file = open('myfile.txt','a')
+    i=i+1
+    my_file.write(str(i))
+    my_file.write(' ')
+    my_file.close()
+    time.sleep(1)
+
+
+
+
+
+#file = open('file_oks', 'w')
+#print('Имя файла: ', file.name)
+#print('Файл закрыт: ', file.closed)
+#file.close()
+#print('А теперь закрыт: ', file.closed)
+
+
+
+
+#t - любая переменная
+
+
+
+
+#text = '123-123=0'
+#file_oks.write(str(text))
+#file_oks.close()
