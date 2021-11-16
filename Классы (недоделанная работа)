@@ -1,0 +1,14 @@
+    def display_info(self):
+        print("Имя", self.name)
+
+    def display_info(self):
+        print("Модель", self.mode)
+
+    def display_info(self):
+        print("год выпуска", self.release)
+
+
+
+     name = "BMW"
+     model = "M5"
+     release = "2020"
