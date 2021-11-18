@@ -1,0 +1,19 @@
+class Table:
+    def __init__(self, l = 1, w = 1, h = 1):
+        self.length = l
+        self.width = w
+        self.height = h
+    def sum(self):
+        print(self.length*self.width*self.height*0.4)
+
+class KitchenTable(Table):
+    def __init__(self, l, w, h, n = 2):
+        Table.__init__(self, l, w, h)
+        self.namber = n
+    def resalt(self):
+        print(self.length*self.width*self.height*0.4*self.namber)
+
+table1 = Table(125,65,200)
+table1.sum()
+table2 = KitchenTable(125,65,200,3)
+table2.resalt()
