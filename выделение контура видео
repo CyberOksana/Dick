@@ -1,0 +1,21 @@
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+def rotate (img , angle):
+    height, width = img.shape[:2]
+    point = (width//2, height//2)
+    mat = cv2.getRotateMatrix20(point, angle, 1)
+    return cv2.warpAffine(img, mat, (width, height))
+
+while True:
+    success, img = cap.read()
+    img = cv2.flip(img,1)
+    img = cv2.GaussianBlur(img, (25, 21), 1)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    img = cv2.Canny(img, 140, 180)
+
+    cv2.imshow("skala", img)
+
+    if cv2.waitKey(1)  &  0xFF == ord('q'):
+        break
