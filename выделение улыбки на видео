@@ -1,0 +1,19 @@
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+small = cv2.CascadeClassifier('1.xml')
+
+
+while True:
+    a, img = cap.read()
+    results = small.detectMultiScale(img, scaleFactor=2, minNeighbors=35)
+    for (x, y, w, h) in results:
+        cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), thickness=5)
+
+
+
+    cv2.imshow("skala", img)
+
+    if cv2.waitKey(1)  &  0xFF == ord('q'):
+        break
